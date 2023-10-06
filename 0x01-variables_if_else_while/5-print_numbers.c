@@ -13,6 +13,6 @@ int main(void)
 
 	printf("0");
 	while (i < 10)
-		printf("i", i++);
+		printf("%d", i++);
 	return (0);
 }
