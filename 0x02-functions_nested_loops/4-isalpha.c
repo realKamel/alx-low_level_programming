@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_islower - perform a check if the char is lowecase or not
+ * _isalpha - perform a check if the char is it from alphapets or not
  * @c : the char to check
  * Return: 1 if it belongs to alphapets
  */
