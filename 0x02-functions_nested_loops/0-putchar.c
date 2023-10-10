@@ -7,12 +7,13 @@
  */
 int main(void)
 {
-	int i;
+	int i = 0;
 	char word[] = "_putchar";
 
-	for (i = 0; i < 9; i++)
+	while (word[i] != '\0')
 	{
 		_putchar(word[i]);
+		i++;
 	}
 	_putchar('\n');
 	return (0);
