@@ -4,9 +4,9 @@
  * @x: first parameter
  * @y: second parameter
  *
- * Return : Sum of the two parameters 
+ * Return: Sum of the two parameters
 */
 int add(int x, int y)
 {
-	return (x+y);
+	return (x + y);
 }
