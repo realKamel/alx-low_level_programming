@@ -6,23 +6,34 @@
 */
 void times_table(void)
 {
-	int i, j, tmp, tmp2;
+	int i, j, tens;
 
-	i = 0;
-	for (; i < 10; i++)
+	for (i = 0; i < 10 ; i++)
 	{
-		j = 0;
-		for (; j < 10; j++)
+		for (j = 0 ; j < 10 ; j++)
 		{
-			tmp2 = (i * j) % 10;
-			tmp = (i * j) / 10;
-			_putchar(tmp + '0');
-			_putchar(tmp2 + '0');
-			if (tmp != 8 && tmp != 1)
+			if ((j * i) < 10)
 			{
-				_putchar(',');
-				_putchar(' ');
+				putchar((j * i) + '0');
+				if (j < 9)
+				{
+					putchar(44);
+					putchar(32);
+					putchar(32);
+				}
+				}
+				else
+				{
+					putchar(((i * j) / 10) + '0');
+					tens = (i * j) % 10;
+					putchar(tens + '0');
+					if (j < 9)
+					{
+						putchar(44);
+						putchar(32);
+					}
 			}
 		}
+		putchar('\n');
 	}
 }
