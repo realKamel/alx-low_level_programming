@@ -4,7 +4,7 @@
  * _strncat - copy a strig
  * @src: pointer to the source char array
  * @dest: pointer to the destnation array
- *
+ * @n: the amount of chars to copy
  * Return: pointer to the dest char array afer catenate
 */
 char *_strncat(char *dest, char *src, int n)
