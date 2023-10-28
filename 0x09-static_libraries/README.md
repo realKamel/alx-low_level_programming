@@ -1,1 +1,1 @@
-#tasks about libs
+# 0x08. C - Static Libraries
