@@ -10,7 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-	int res, count, i;
+	int res, count;
+	long unsigned int i;
 	char *end;
 	int cents[4] = {25, 10, 5, 2};
 
