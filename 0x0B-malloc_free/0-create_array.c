@@ -5,10 +5,13 @@
  * @size:size of array
  * @c:and initializer character
  *
- * Return: pointer to array of char
+ * Return:a pointer to the array, or NULL if it fails
 */
 char *create_array(unsigned int size, char c)
 {
+	if (size < 1)
+		return (NULL);
+	
 	char *arr = (char *) malloc(sizeof(char) * size);
 	unsigned int i;
 
